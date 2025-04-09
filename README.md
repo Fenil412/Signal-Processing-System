@@ -81,8 +81,3 @@ git push origin add-enhanced-filtering
 
 ## 📜 License
 This project is licensed under the **MIT License**.
-
----
-
-🔊 **Analyze, Visualize, and Recover — All in the Browser!** 🌐
-```
