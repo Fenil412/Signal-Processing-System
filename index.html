@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Processing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Signal Processing System</h1>
+        
+        <div class="signal-input-section">
+            <h2>Signal Inputs</h2>
+            
+            <div class="signal-form">
+                <h3>Original Signal</h3>
+                <div class="form-group">
+                    <label for="original-amplitude">Amplitude:</label>
+                    <input type="number" id="original-amplitude" value="1" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="original-frequency">Frequency (Hz):</label>
+                    <input type="number" id="original-frequency" value="1" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="original-phase">Phase (radians):</label>
+                    <input type="number" id="original-phase" value="0" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="original-constant">Constant:</label>
+                    <input type="number" id="original-constant" value="0" step="0.1">
+                </div>
+            </div>
+            
+            <div class="signal-form">
+                <h3>Noise Signal</h3>
+                <div class="form-group">
+                    <label for="noise-amplitude">Amplitude:</label>
+                    <input type="number" id="noise-amplitude" value="0.5" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="noise-frequency">Frequency (Hz):</label>
+                    <input type="number" id="noise-frequency" value="3" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="noise-phase">Phase (radians):</label>
+                    <input type="number" id="noise-phase" value="0" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="noise-constant">Constant:</label>
+                    <input type="number" id="noise-constant" value="0" step="0.1">
+                </div>
+            </div>
+            
+            <button id="process-btn">Process Signals</button>
+        </div>
+        
+        <div class="results-section">
+            <div class="signal-display">
+                <h3>Original Signal</h3>
+                <div class="equation" id="original-equation">y(t) = </div>
+                <div class="chart-container">
+                    <canvas id="original-chart"></canvas>
+                </div>
+            </div>
+            
+            <div class="signal-display">
+                <h3>Noise Signal</h3>
+                <div class="equation" id="noise-equation">y(t) = </div>
+                <div class="chart-container">
+                    <canvas id="noise-chart"></canvas>
+                </div>
+            </div>
+            
+            <div class="signal-display">
+                <h3>Composite Signal</h3>
+                <div class="equation" id="composite-equation">y(t) = </div>
+                <div class="chart-container">
+                    <canvas id="composite-chart"></canvas>
+                </div>
+            </div>
+            
+            <div class="signal-display">
+                <h3>Recovered Signal</h3>
+                <div class="equation" id="recovered-equation">y(t) = </div>
+                <div class="chart-container">
+                    <canvas id="recovered-chart"></canvas>
+                </div>
+                <div class="recovery-info">
+                    <h4>Recovery Method:</h4>
+                    <p id="recovery-method-description">Fast Fourier Transform (FFT) is used to decompose the composite signal. The dominant frequency component matching the original signal is extracted, and the inverse FFT is applied to recover the original signal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="website-makers">
+        <p>Designed & Developed By</p>
+        <p>Fenil Chodvadiya 23BCE048</p>
+        <p>Jayveer Dahiya 23BCE050</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
