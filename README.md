@@ -1,10 +1,3 @@
-Here’s a `README.md` file tailored for your **Signal Processing System** project, following the style of your example:
-
----
-
-```markdown
-# Mined_Hackathon_2025
-
 # Signal Processing System 🔊
 
 Signal Processing System is a **web-based signal analyzer** designed to visualize and process time-domain signals using **FFT (Fast Fourier Transform)**. This intuitive project simulates signal generation, mixing with noise, and signal recovery through frequency analysis using **JavaScript** and **Chart.js**.
@@ -93,7 +86,3 @@ This project is licensed under the **MIT License**.
 
 🔊 **Analyze, Visualize, and Recover — All in the Browser!** 🌐
 ```
-
----
-
-Let me know if you want to auto-generate a `requirements.txt` for converting this to a Flask-based app or expand features with React/Flask.
